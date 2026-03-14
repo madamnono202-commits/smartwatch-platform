@@ -26,9 +26,9 @@ export default function ExchangeDetail() {
         <div className="border-b border-gray-200 bg-white/80 backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <nav className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-              <Link to="/crypto" className="hover:text-blue-600">Home</Link>
+              <Link to="/" className="hover:text-blue-600">Home</Link>
               <ChevronRight size={14} />
-              <Link to="/crypto" className="hover:text-blue-600">Exchanges</Link>
+              <Link to="/" className="hover:text-blue-600">Exchanges</Link>
               <ChevronRight size={14} />
               <span className="text-gray-700 font-medium">{exchange.name}</span>
             </nav>
@@ -384,7 +384,7 @@ export default function ExchangeDetail() {
                 {similarExchanges.map((ex) => (
                   <Link
                     key={ex.id}
-                    to={`/crypto/exchange/${ex.slug}`}
+                    to={`/exchange/${ex.slug}`}
                     className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <span className="text-2xl">{ex.logo}</span>

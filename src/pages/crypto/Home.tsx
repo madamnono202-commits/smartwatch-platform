@@ -60,7 +60,7 @@ function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Link
-                to="/crypto/compare"
+                to="/compare"
                 className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-lg transition-all hover:shadow-lg hover:shadow-blue-600/25 text-center"
               >
                 Compare Exchanges Now
@@ -133,7 +133,7 @@ function ExchangeTable() {
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900">Top Exchanges Right Now</h2>
             <p className="text-gray-500 mt-1">Automatically ranked by AI every hour</p>
           </div>
-          <Link to="/crypto/compare" className="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-1">
+          <Link to="/compare" className="text-blue-600 font-medium hover:text-blue-700 flex items-center gap-1">
             View Full Comparison <ArrowRight size={16} />
           </Link>
         </div>
@@ -168,7 +168,7 @@ function ExchangeTable() {
                       </span>
                     </td>
                     <td className="px-4 py-4">
-                      <Link to={`/crypto/exchange/${ex.slug}`} className="flex items-center gap-3">
+                      <Link to={`/exchange/${ex.slug}`} className="flex items-center gap-3">
                         <span className="text-2xl">{ex.logo}</span>
                         <span className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{ex.name}</span>
                       </Link>
@@ -276,7 +276,7 @@ function EditorsChoice() {
                 )}
 
                 <Link
-                  to={`/crypto/exchange/${ex.slug}`}
+                  to={`/exchange/${ex.slug}`}
                   className="mt-5 w-full py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
                 >
                   Visit Exchange <ExternalLink size={14} />
@@ -305,7 +305,7 @@ function BlogSection() {
           {cryptoBlogPosts.map((post) => (
             <Link
               key={post.id}
-              to="/crypto/blog/best-crypto-exchanges-2026"
+              to="/blog/best-crypto-exchanges-2026"
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100"
             >
               <div className="aspect-video overflow-hidden">

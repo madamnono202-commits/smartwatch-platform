@@ -40,7 +40,7 @@ export default function CryptoCompare() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-3">
-            <Link to="/crypto" className="hover:text-blue-600">Home</Link>
+            <Link to="/" className="hover:text-blue-600">Home</Link>
             <ChevronRight size={14} />
             <span className="text-gray-700 font-medium">Compare Exchanges</span>
           </nav>
@@ -206,7 +206,7 @@ export default function CryptoCompare() {
                     </div>
                   </div>
                   <Link
-                    to={`/crypto/exchange/${recommended.slug}`}
+                    to={`/exchange/${recommended.slug}`}
                     className="ml-auto px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-1 text-sm"
                   >
                     View Details <ExternalLink size={12} />
@@ -261,7 +261,7 @@ export default function CryptoCompare() {
                             </span>
                           </td>
                           <td className="px-3 py-4">
-                            <Link to={`/crypto/exchange/${ex.slug}`} className="flex items-center gap-2">
+                            <Link to={`/exchange/${ex.slug}`} className="flex items-center gap-2">
                               <span className="text-xl">{ex.logo}</span>
                               <span className="font-semibold text-gray-900 text-sm hover:text-blue-600">{ex.name}</span>
                             </Link>
@@ -297,7 +297,7 @@ export default function CryptoCompare() {
                           </td>
                           <td className="px-3 py-4">
                             <div className="flex gap-2">
-                              <Link to={`/crypto/exchange/${ex.slug}`} className="text-xs text-blue-600 hover:underline whitespace-nowrap">
+                              <Link to={`/exchange/${ex.slug}`} className="text-xs text-blue-600 hover:underline whitespace-nowrap">
                                 Review
                               </Link>
                               <button className="px-3 py-1.5 bg-blue-600 text-white text-xs font-semibold rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap">

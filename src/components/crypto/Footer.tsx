@@ -27,7 +27,7 @@ export default function CryptoFooter() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <Link to="/crypto" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <TrendingUp className="w-6 h-6 text-blue-400" />
               <span className="text-lg font-bold text-white">
                 Crypto<span className="text-blue-400">Compare</span>
@@ -48,7 +48,7 @@ export default function CryptoFooter() {
             <ul className="space-y-2 text-sm">
               {['Binance', 'Bybit', 'Coinbase', 'Kraken', 'OKX', 'KuCoin'].map((e) => (
                 <li key={e}>
-                  <Link to={`/crypto/exchange/${e.toLowerCase()}`} className="hover:text-blue-400 transition-colors">{e}</Link>
+                  <Link to={`/exchange/${e.toLowerCase()}`} className="hover:text-blue-400 transition-colors">{e}</Link>
                 </li>
               ))}
             </ul>
@@ -57,7 +57,7 @@ export default function CryptoFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/crypto/blog/best-crypto-exchanges-2026" className="hover:text-blue-400 transition-colors">Blog</Link></li>
+              <li><Link to="/blog/best-crypto-exchanges-2026" className="hover:text-blue-400 transition-colors">Blog</Link></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Learn</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Glossary</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Tools</a></li>

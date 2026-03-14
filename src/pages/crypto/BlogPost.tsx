@@ -30,7 +30,7 @@ export default function BlogPost() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20 relative z-10">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-white/70 mb-4">
-          <Link to="/crypto" className="hover:text-white">Home</Link>
+          <Link to="/" className="hover:text-white">Home</Link>
           <ChevronRight size={14} />
           <span className="hover:text-white">Blog</span>
           <ChevronRight size={14} />
@@ -97,7 +97,7 @@ export default function BlogPost() {
               {exchanges.slice(0, 3).map((ex, i) => (
                 <Link
                   key={ex.id}
-                  to={`/crypto/exchange/${ex.slug}`}
+                  to={`/exchange/${ex.slug}`}
                   className={`flex items-center gap-3 py-2.5 ${i > 0 ? 'border-t border-gray-100' : ''}`}
                 >
                   <span className="text-xl">{ex.logo}</span>
@@ -151,7 +151,7 @@ export default function BlogPost() {
                     </div>
                   </div>
                   <Link
-                    to={`/crypto/exchange/${exchanges[0].slug}`}
+                    to={`/exchange/${exchanges[0].slug}`}
                     className="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-1 whitespace-nowrap"
                   >
                     Visit {exchanges[0].name} <ExternalLink size={14} />
@@ -191,7 +191,7 @@ export default function BlogPost() {
                     {exchanges.slice(0, 6).map((ex, i) => (
                       <tr key={ex.id} className={`${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'} border-t border-gray-100`}>
                         <td className="px-4 py-3">
-                          <Link to={`/crypto/exchange/${ex.slug}`} className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                          <Link to={`/exchange/${ex.slug}`} className="flex items-center gap-2 text-sm font-medium text-gray-900 hover:text-blue-600">
                             <span>{ex.logo}</span> {ex.name}
                           </Link>
                         </td>
@@ -276,7 +276,7 @@ export default function BlogPost() {
                     { title: 'How to Start Trading Crypto', cat: 'Learn', img: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=400&h=250&fit=crop' },
                     { title: 'Crypto Security Best Practices', cat: 'Security', img: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop' },
                   ].map((post, i) => (
-                    <Link key={i} to="/crypto/blog/best-crypto-exchanges-2026" className="group">
+                    <Link key={i} to="/blog/best-crypto-exchanges-2026" className="group">
                       <div className="aspect-video rounded-xl overflow-hidden mb-3">
                         <img
                           src={post.img}

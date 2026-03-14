@@ -33,12 +33,12 @@ export default function CryptoHeader() {
   }, [location]);
 
   const navLinks = [
-    { label: 'Compare', href: '/crypto/compare' },
-    { label: 'Exchanges', href: '/crypto' },
-    { label: 'Prices', href: '/crypto' },
-    { label: 'Fees', href: '/crypto' },
-    { label: 'Blog', href: '/crypto/blog/best-crypto-exchanges-2026' },
-    { label: 'Tools', href: '/crypto' },
+    { label: 'Compare', href: '/compare' },
+    { label: 'Exchanges', href: '/' },
+    { label: 'Prices', href: '/' },
+    { label: 'Fees', href: '/' },
+    { label: 'Blog', href: '/blog/best-crypto-exchanges-2026' },
+    { label: 'Tools', href: '/' },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function CryptoHeader() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-[72px]">
             {/* Logo */}
-            <Link to="/crypto" className="flex items-center gap-2 group">
+            <Link to="/" className="flex items-center gap-2 group">
               <TrendingUp className="w-7 h-7 text-blue-600 group-hover:text-blue-700 transition-colors" />
               <span className="text-xl font-bold text-gray-900 tracking-tight">
                 Crypto<span className="text-blue-600">Compare</span>
