@@ -57,22 +57,22 @@ export default function CryptoFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/blog/best-crypto-exchanges-2026" className="hover:text-blue-400 transition-colors">Blog</Link></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Learn</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Glossary</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Tools</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">News</a></li>
+              <li><Link to="/blog" className="hover:text-blue-400 transition-colors">Blog</Link></li>
+              <li><Link to="/learn" className="hover:text-blue-400 transition-colors">Learn</Link></li>
+              <li><Link to="/glossary" className="hover:text-blue-400 transition-colors">Glossary</Link></li>
+              <li><Link to="/tools/fee-calculator" className="hover:text-blue-400 transition-colors">Tools</Link></li>
+              <li><Link to="/news" className="hover:text-blue-400 transition-colors">News</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Terms</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition-colors">Affiliate Disclosure</a></li>
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">About</Link></li>
+              <li><Link to="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li><Link to="/privacy" className="hover:text-blue-400 transition-colors">Privacy</Link></li>
+              <li><Link to="/terms" className="hover:text-blue-400 transition-colors">Terms</Link></li>
+              <li><Link to="/about" className="hover:text-blue-400 transition-colors">Affiliate Disclosure</Link></li>
             </ul>
           </div>
         </div>

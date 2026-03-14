@@ -52,11 +52,11 @@ export default function SmartWatchFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Shop</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">All Watches</Link></li>
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">Deals</Link></li>
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">New Arrivals</Link></li>
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">Brands</Link></li>
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">Compare</Link></li>
+              <li><Link to="/smartwatch/shop" className="hover:text-teal-400 transition-colors">All Watches</Link></li>
+              <li><Link to="/smartwatch/shop" className="hover:text-teal-400 transition-colors">Deals</Link></li>
+              <li><Link to="/smartwatch/shop" className="hover:text-teal-400 transition-colors">New Arrivals</Link></li>
+              <li><Link to="/smartwatch/shop" className="hover:text-teal-400 transition-colors">Brands</Link></li>
+              <li><Link to="/smartwatch/quiz" className="hover:text-teal-400 transition-colors">Style Quiz</Link></li>
             </ul>
           </div>
 
@@ -64,11 +64,11 @@ export default function SmartWatchFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Customer Service</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Shipping</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Returns</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Track Order</a></li>
+              <li><Link to="/contact" className="hover:text-teal-400 transition-colors">Shipping</Link></li>
+              <li><Link to="/contact" className="hover:text-teal-400 transition-colors">Returns</Link></li>
+              <li><Link to="/contact" className="hover:text-teal-400 transition-colors">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-teal-400 transition-colors">Contact</Link></li>
+              <li><Link to="/smartwatch/cart" className="hover:text-teal-400 transition-colors">Track Order</Link></li>
             </ul>
           </div>
 
@@ -76,11 +76,11 @@ export default function SmartWatchFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-teal-400 transition-colors">About</a></li>
-              <li><Link to="/smartwatch" className="hover:text-teal-400 transition-colors">Blog</Link></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Guides</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Affiliate Program</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Press</a></li>
+              <li><Link to="/about" className="hover:text-teal-400 transition-colors">About</Link></li>
+              <li><Link to="/smartwatch/blog" className="hover:text-teal-400 transition-colors">Blog</Link></li>
+              <li><Link to="/smartwatch/blog" className="hover:text-teal-400 transition-colors">Guides</Link></li>
+              <li><Link to="/about" className="hover:text-teal-400 transition-colors">Affiliate Program</Link></li>
+              <li><Link to="/contact" className="hover:text-teal-400 transition-colors">Press</Link></li>
             </ul>
           </div>
 

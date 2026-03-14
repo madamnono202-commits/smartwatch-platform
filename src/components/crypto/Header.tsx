@@ -34,11 +34,11 @@ export default function CryptoHeader() {
 
   const navLinks = [
     { label: 'Compare', href: '/compare' },
-    { label: 'Exchanges', href: '/' },
-    { label: 'Prices', href: '/' },
-    { label: 'Fees', href: '/' },
-    { label: 'Blog', href: '/blog/best-crypto-exchanges-2026' },
-    { label: 'Tools', href: '/' },
+    { label: 'Exchanges', href: '/exchanges' },
+    { label: 'Prices', href: '/prices' },
+    { label: 'Fees', href: '/fees' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Tools', href: '/tools/fee-calculator' },
   ];
 
   return (

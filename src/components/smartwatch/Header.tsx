@@ -33,12 +33,12 @@ export default function SmartWatchHeader() {
   }, [location]);
 
   const navLinks = [
-    { label: 'Shop', href: '/smartwatch' },
-    { label: 'Brands', href: '/smartwatch' },
-    { label: 'Compare', href: '/smartwatch' },
+    { label: 'Shop', href: '/smartwatch/shop' },
+    { label: 'Brands', href: '/smartwatch/shop' },
+    { label: 'Quiz', href: '/smartwatch/quiz' },
     { label: 'Try It On', href: '/smartwatch/virtual-try-on' },
-    { label: 'Deals', href: '/smartwatch' },
-    { label: 'Blog', href: '/smartwatch' },
+    { label: 'Blog', href: '/smartwatch/blog' },
+    { label: 'Cart', href: '/smartwatch/cart' },
   ];
 
   return (
