@@ -65,9 +65,12 @@ function HeroSection() {
               >
                 Compare Exchanges Now
               </Link>
-              <button className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl text-lg hover:bg-white/10 transition-all text-center">
+              <Link
+                to="/prices"
+                className="px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl text-lg hover:bg-white/10 transition-all text-center"
+              >
                 See Live Prices
-              </button>
+              </Link>
             </div>
             <div className="flex flex-wrap gap-6 text-sm text-gray-400">
               {[
@@ -305,7 +308,7 @@ function BlogSection() {
           {cryptoBlogPosts.map((post) => (
             <Link
               key={post.id}
-              to="/blog/best-crypto-exchanges-2026"
+              to="/blog"
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100"
             >
               <div className="aspect-video overflow-hidden">
@@ -329,9 +332,9 @@ function BlogSection() {
           ))}
         </div>
         <div className="text-center mt-8">
-          <button className="inline-flex items-center gap-1 text-blue-600 font-medium hover:text-blue-700 transition-colors">
+          <Link to="/blog" className="inline-flex items-center gap-1 text-blue-600 font-medium hover:text-blue-700 transition-colors">
             Read All Articles <ArrowRight size={16} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
@@ -340,10 +343,10 @@ function BlogSection() {
 
 function ToolsSection() {
   const tools = [
-    { icon: <Calculator size={24} />, name: 'Fee Calculator', desc: 'Compare trading fees across exchanges for any trade size.' },
-    { icon: <TrendingUp size={24} />, name: 'Profit Calculator', desc: 'Calculate potential profits from your crypto trades.' },
-    { icon: <DollarSign size={24} />, name: 'DCA Calculator', desc: 'Plan your dollar-cost averaging strategy over time.' },
-    { icon: <Shield size={24} />, name: 'Currency Converter', desc: 'Convert between 100+ cryptocurrencies in real time.' },
+    { icon: <Calculator size={24} />, name: 'Fee Calculator', desc: 'Compare trading fees across exchanges for any trade size.', href: '/tools/fee-calculator' },
+    { icon: <TrendingUp size={24} />, name: 'Profit Calculator', desc: 'Calculate potential profits from your crypto trades.', href: '/tools/profit-calculator' },
+    { icon: <DollarSign size={24} />, name: 'DCA Calculator', desc: 'Plan your dollar-cost averaging strategy over time.', href: '/tools/dca-calculator' },
+    { icon: <Shield size={24} />, name: 'Currency Converter', desc: 'Convert between 100+ cryptocurrencies in real time.', href: '/tools/converter' },
   ];
 
   return (
@@ -352,9 +355,10 @@ function ToolsSection() {
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 text-center mb-8">Free Crypto Tools</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {tools.map((tool) => (
-            <div
+            <Link
               key={tool.name}
-              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all group cursor-pointer border border-gray-100"
+              to={tool.href}
+              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all group cursor-pointer border border-gray-100 block"
             >
               <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 {tool.icon}
@@ -364,7 +368,7 @@ function ToolsSection() {
               <span className="inline-flex items-center gap-1 text-blue-600 text-sm font-medium mt-3 group-hover:gap-2 transition-all">
                 Use Tool <ChevronRight size={14} />
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

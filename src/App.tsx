@@ -2,9 +2,6 @@ import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-
 import { useEffect } from 'react';
 import './App.css';
 
-// Landing
-import Landing from './pages/Landing';
-
 // Crypto
 import CryptoHeader from './components/crypto/Header';
 import CryptoFooter from './components/crypto/Footer';
@@ -25,18 +22,6 @@ import Staking from './pages/crypto/Staking';
 import News from './pages/crypto/News';
 import Learn from './pages/crypto/Learn';
 import Glossary from './pages/crypto/Glossary';
-
-// SmartWatch
-import SmartWatchHeader from './components/smartwatch/Header';
-import SmartWatchFooter from './components/smartwatch/Footer';
-import SmartWatchHome from './pages/smartwatch/Home';
-import ProductDetail from './pages/smartwatch/ProductDetail';
-import VirtualTryOn from './pages/smartwatch/VirtualTryOn';
-import StyleFinderQuiz from './pages/smartwatch/StyleFinderQuiz';
-import Shop from './pages/smartwatch/Shop';
-import Cart from './pages/smartwatch/Cart';
-import Category from './pages/smartwatch/Category';
-import SmartWatchBlogIndex from './pages/smartwatch/BlogIndex';
 
 // Shared
 import About from './pages/About';
@@ -65,26 +50,11 @@ function CryptoLayout() {
   );
 }
 
-function SmartWatchLayout() {
-  return (
-    <div className="min-h-screen bg-white">
-      <SmartWatchHeader />
-      <main>
-        <Outlet />
-      </main>
-      <SmartWatchFooter />
-    </div>
-  );
-}
-
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        {/* Landing Page */}
-        <Route path="/landing" element={<Landing />} />
-
         {/* CryptoCompare AI Platform */}
         <Route path="/" element={<CryptoLayout />}>
           <Route index element={<CryptoHome />} />
@@ -108,18 +78,6 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="terms" element={<Terms />} />
-        </Route>
-
-        {/* SmartWatch E-Commerce Platform */}
-        <Route path="/smartwatch" element={<SmartWatchLayout />}>
-          <Route index element={<SmartWatchHome />} />
-          <Route path="product/:slug" element={<ProductDetail />} />
-          <Route path="virtual-try-on" element={<VirtualTryOn />} />
-          <Route path="quiz" element={<StyleFinderQuiz />} />
-          <Route path="shop" element={<Shop />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="category/:slug" element={<Category />} />
-          <Route path="blog" element={<SmartWatchBlogIndex />} />
         </Route>
 
         {/* 404 */}

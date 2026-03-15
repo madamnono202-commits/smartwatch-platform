@@ -28,7 +28,7 @@ export default function ExchangeDetail() {
             <nav className="flex items-center gap-2 text-sm text-gray-400 mb-4">
               <Link to="/" className="hover:text-blue-600">Home</Link>
               <ChevronRight size={14} />
-              <Link to="/" className="hover:text-blue-600">Exchanges</Link>
+              <Link to="/exchanges" className="hover:text-blue-600">Exchanges</Link>
               <ChevronRight size={14} />
               <span className="text-gray-700 font-medium">{exchange.name}</span>
             </nav>

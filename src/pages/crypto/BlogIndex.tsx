@@ -163,7 +163,7 @@ export default function BlogIndex() {
           {filtered.map((post) => (
             <Link
               key={post.id}
-              to="/blog/best-crypto-exchanges-2026"
+              to={`/blog/${post.id === 1 ? 'best-crypto-exchanges-2026' : post.id === 2 ? 'binance-vs-bybit-2026' : post.id === 3 ? 'how-to-start-trading-crypto' : 'best-crypto-exchanges-2026'}`}
               className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100"
             >
               <div className="aspect-video overflow-hidden">
